@@ -9,7 +9,8 @@
  *     }
  * }
  */
-public class Solution {
+package CS2LCP.Linked_List;
+public class IntersectionofLists {
 
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
         if(headA == null || headB == null)

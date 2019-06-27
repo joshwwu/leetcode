@@ -9,7 +9,8 @@
  *     }
  * }
  */
-public class Solution {
+package CS2LCP.Linked_List;
+public class LinkedListCycle {
     public ListNode detectCycle(ListNode head) {
         if(head == null)
             return null;

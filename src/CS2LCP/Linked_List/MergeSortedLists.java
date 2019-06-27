@@ -6,7 +6,8 @@
  *     ListNode(int x) { val = x; }
  * }
  */
-class Solution {
+package CS2LCP.Linked_List;
+class MergeSortedLists {
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
         ListNode dummy = new ListNode(0);
         ListNode curr = dummy;
