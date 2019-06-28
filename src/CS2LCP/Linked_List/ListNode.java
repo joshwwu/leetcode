@@ -1,5 +1,3 @@
-package CS2LCP.Linked_List;
-
 class ListNode {
     int val;
     ListNode next;
