@@ -1,3 +1,8 @@
+/*
+ * @lc app=leetcode id=21 lang=java
+ *
+ * [21] Merge Two Sorted Lists
+ */
 /**
  * Definition for singly-linked list.
  * public class ListNode {
@@ -6,17 +11,16 @@
  *     ListNode(int x) { val = x; }
  * }
  */
-package CS2LCP.Linked_List;
-class MergeSortedLists {
+class Solution {
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
         ListNode dummy = new ListNode(0);
         ListNode curr = dummy;
         while(l1 != null && l2 != null){
             if(l1.val <= l2.val){
-                curr.next = new ListNode(l1.val);
+                curr.next = l1;
                 l1 = l1.next;
             }else{
-                curr.next = new ListNode(l2.val);
+                curr.next = l2;
                 l2 = l2.next;
             }
             curr = curr.next;
@@ -28,3 +32,4 @@ class MergeSortedLists {
         return dummy.next;
     }
 }
+
