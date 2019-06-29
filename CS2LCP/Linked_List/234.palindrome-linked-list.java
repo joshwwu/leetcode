@@ -33,8 +33,6 @@ class Solution {
     }
     
     private ListNode reverse(ListNode head){
-        if(head == null || head.next == null)
-            return head;
         ListNode newHead = null;
         while(head != null){
             ListNode next = head.next;
